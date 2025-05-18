@@ -1,0 +1,53 @@
+
+<html>
+  <head>
+    <title>Top attractions in spain</title>
+    <meta charset="UTF-8" />
+    <style>
+      body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; }
+      .attraction { margin-bottom: 40px; }
+      img {
+        max-width: 500px;
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        margin-top: 10px;
+      }
+      #map {
+        width: 100%;
+        max-width: 800px;
+        height: auto;
+        margin-bottom: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Here are travel tips for spain</h2>
+    <img src="https://staticmap.openstreetmap.de/staticmap.php?center=37.17624,-3.42435&zoom=10&size=800x400&markers=37.17624%2C-3.42435%2Clightblue1&markers=41.40361%2C2.175%2Clightblue1&markers=41.41435%2C2.15328%2Clightblue1" id="map" alt="Map of spain" />
+
+    <div class="attraction">
+      <h3>Alhambra</h3>
+      <p><strong>Description:</strong> A palace and fortress complex that showcases Islamic architecture. A UNESCO World Heritage Site.</p>
+      <img src="https://images.unsplash.com/photo-1564740603199-5f56138c6679?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NTA3Njl8MHwxfHNlYXJjaHwxfHxBbGhhbWJyYXxlbnwwfHx8fDE3NDc0ODcwNDB8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Alhambra" loading="lazy" />
+    </div>
+  
+    <div class="attraction">
+      <h3>La Sagrada Familia</h3>
+      <p><strong>Description:</strong> A large, unfinished cathedral in Barcelona. Known for its Gothic and Art Nouveau styles.</p>
+      <img src="https://images.unsplash.com/photo-1581211085718-1405201b753a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NTA3Njl8MHwxfHNlYXJjaHwxfHxMYSUyMFNhZ3JhZGElMjBGYW1pbGlhfGVufDB8fHx8MTc0NzU3MDc4OXww&ixlib=rb-4.1.0&q=80&w=1080" alt="La Sagrada Familia" loading="lazy" />
+    </div>
+  
+    <div class="attraction">
+      <h3>Park Güell</h3>
+      <p><strong>Description:</strong> A public park in Barcelona featuring the works of Antoni Gaudí. Known for its mosaic benches.</p>
+      <img src="https://images.unsplash.com/photo-1581855042850-8b4442c534d4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NTA3Njl8MHwxfHNlYXJjaHwxfHxQYXJrJTIwRyVDMyVCQ2VsbHxlbnwwfHx8fDE3NDc1NzY5OTJ8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Park Güell" loading="lazy" />
+    </div>
+  
+    <br>
+    <a href=<a href="$execution.resumeUrl">Approve</a> |
+    <a href="https://example.com/reject?location=spain">Reject</a>
+  </body>
+</html>
