@@ -1,0 +1,74 @@
+
+<html>
+  <head>
+    <title>Top attractions in spain</title>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <style>
+      body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; }
+      .attraction { margin-bottom: 40px; }
+      img {
+        max-width: 500px;
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        margin-top: 10px;
+      }
+      #map {
+        width: 100%;
+        max-width: 800px;
+        height: 400px;
+        margin-bottom: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Here are travel tips for spain</h2>
+    <div id="map"></div>
+
+    <div class="attraction">
+      <h3>Alhambra</h3>
+      <p><strong>Description:</strong> A palace and fortress complex that showcases Moorish architecture. A must-visit in Granada.</p>
+      <img src="https://images.unsplash.com/photo-1564740603199-5f56138c6679?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NTA3Njl8MHwxfHNlYXJjaHwxfHxBbGhhbWJyYXxlbnwwfHx8fDE3NDc0ODcwNDB8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Alhambra" loading="lazy" />
+    </div>
+  
+    <div class="attraction">
+      <h3>Park Güell</h3>
+      <p><strong>Description:</strong> A famous public park in Barcelona featuring stunning mosaics and sculptures by Antoni Gaudí. A popular spot for panoramic views of the city.</p>
+      <img src="https://images.unsplash.com/photo-1581855042850-8b4442c534d4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NTA3Njl8MHwxfHNlYXJjaHwxfHxQYXJrJTIwRyVDMyVCQ2VsbHxlbnwwfHx8fDE3NDc1NzY5OTJ8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Park Güell" loading="lazy" />
+    </div>
+  
+    <div class="attraction">
+      <h3>Catedral de Santiago de Compostela</h3>
+      <p><strong>Description:</strong> A stunning cathedral in Galicia, believed to be the final resting place of Saint James the Greater. A pilgrim's paradise.</p>
+      <img src="https://images.unsplash.com/photo-1680038378880-cbcdbdec2db8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NTA3Njl8MHwxfHNlYXJjaHwxfHxDYXRlZHJhbCUyMGRlJTIwU2FudGlhZ28lMjBkZSUyMENvbXBvc3RlbGF8ZW58MHx8fHwxNzQ3NTcyMDcyfDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Catedral de Santiago de Compostela" loading="lazy" />
+    </div>
+  
+  <script>
+    var map = L.map('map');
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    var markers = [
+      L.marker([37.1762, -3.8906]),
+L.marker([41.4144, 2.1523]),
+L.marker([42.8797, -8.5449])
+    ];
+
+    var group = L.featureGroup(markers).addTo(map);
+    map.fitBounds(group.getBounds());
+  </script>
+
+    <br>
+    <a href="$execution.resumeUrl">Approve</a> |
+    <a href="https://example.com/reject?location=spain">Reject</a>
+  </body>
+</html>
