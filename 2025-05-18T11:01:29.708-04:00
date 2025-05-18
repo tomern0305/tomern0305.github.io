@@ -1,0 +1,53 @@
+
+<html>
+  <head>
+    <title>Top attractions in spain</title>
+    <meta charset="UTF-8" />
+    <style>
+      body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; }
+      .attraction { margin-bottom: 40px; }
+      img {
+        max-width: 500px;
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        margin-top: 10px;
+      }
+      #map {
+        width: 100%;
+        max-width: 800px;
+        height: auto;
+        margin-bottom: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Here are travel tips for spain</h2>
+    <img src="https://staticmap.openstreetmap.de/staticmap.php?center=37.17622,-3.59317&zoom=10&size=800x400&markers=37.17622%2C-3.59317%2Clightblue1&markers=41.41453%2C2.15334%2Clightblue1&markers=42.88017%2C-8.54413%2Clightblue1" id="map" alt="Map of spain" />
+
+    <div class="attraction">
+      <h3>Alhambra</h3>
+      <p><strong>Description:</strong> A medieval Islamic palace with stunning architecture and breathtaking views of Granada.</p>
+      <img src="https://images.unsplash.com/photo-1564740603199-5f56138c6679?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NTA3Njl8MHwxfHNlYXJjaHwxfHxBbGhhbWJyYXxlbnwwfHx8fDE3NDc0ODcwNDB8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Alhambra" loading="lazy" />
+    </div>
+  
+    <div class="attraction">
+      <h3>Park Güell</h3>
+      <p><strong>Description:</strong> A famous public park in Barcelona featuring stunning mosaics and city views.</p>
+      <img src="https://images.unsplash.com/photo-1581855042850-8b4442c534d4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NTA3Njl8MHwxfHNlYXJjaHwxfHxQYXJrJTIwRyVDMyVCQ2VsbHxlbnwwfHx8fDE3NDc1NzY5OTJ8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Park Güell" loading="lazy" />
+    </div>
+  
+    <div class="attraction">
+      <h3>The Cathedral of Santiago de Compostela</h3>
+      <p><strong>Description:</strong> A majestic Romanesque cathedral and pilgrimage site in Galicia.</p>
+      <img src="https://images.unsplash.com/photo-1642695113989-105367adabe6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NTA3Njl8MHwxfHNlYXJjaHwxfHxUaGUlMjBDYXRoZWRyYWwlMjBvZiUyMFNhbnRpYWdvJTIwZGUlMjBDb21wb3N0ZWxhfGVufDB8fHx8MTc0NzU4MDQ4OXww&ixlib=rb-4.1.0&q=80&w=1080" alt="The Cathedral of Santiago de Compostela" loading="lazy" />
+    </div>
+  
+    <br>
+    <a href=<a href="$execution.resumeUrl">Approve</a> |
+    <a href="https://example.com/reject?location=spain">Reject</a>
+  </body>
+</html>
