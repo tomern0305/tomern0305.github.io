@@ -1,0 +1,53 @@
+
+<html>
+  <head>
+    <title>Top attractions in spain</title>
+    <meta charset="UTF-8" />
+    <style>
+      body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; }
+      .attraction { margin-bottom: 40px; }
+      img {
+        max-width: 500px;
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        margin-top: 10px;
+      }
+      #map {
+        width: 100%;
+        max-width: 800px;
+        height: auto;
+        margin-bottom: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Here are travel tips for spain</h2>
+    <img src="https://staticmap.openstreetmap.de/staticmap.php?center=37.17622,-3.58333&zoom=10&size=800x400&markers=37.17622%2C-3.58333%2Clightblue1&markers=41.40333%2C2.17444%2Clightblue1&markers=41.41255%2C2.15427%2Clightblue1" id="map" alt="Map of spain" />
+
+    <div class="attraction">
+      <h3>Alhambra</h3>
+      <p><strong>Description:</strong> A palace and fortress complex that showcases Moorish architecture, gardens and fountains, and stunning views of Granada.</p>
+      <img src="https://images.unsplash.com/photo-1564740603199-5f56138c6679?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NTA3Njl8MHwxfHNlYXJjaHwxfHxBbGhhbWJyYXxlbnwwfHx8fDE3NDc0ODcwNDB8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Alhambra" loading="lazy" />
+    </div>
+  
+    <div class="attraction">
+      <h3>Sagrada Familia</h3>
+      <p><strong>Description:</strong> An iconic cathedral designed by Antoni Gaud√­, featuring intricate mosaics, towering spires, and stunning stained-glass windows.</p>
+      <img src="https://images.unsplash.com/photo-1558560354-c17a5af844d6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NTA3Njl8MHwxfHNlYXJjaHwxfHxTYWdyYWRhJTIwRmFtaWxpYXxlbnwwfHx8fDE3NDc1NzU0NTB8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Sagrada Familia" loading="lazy" />
+    </div>
+  
+    <div class="attraction">
+      <h3>Park G√ºell</h3>
+      <p><strong>Description:</strong> A public park featuring whimsical architecture, scenic views of Barcelona, and iconic landmarks like the mosaic benches.</p>
+      <img src="https://images.unsplash.com/photo-1686052903991-fedc0903ad4d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NTA3Njl8MHwxfHNlYXJjaHwxfHxQYXJrJTIwRyVFMiU4OCU5QSVDMiVCQWVsbHxlbnwwfHx8fDE3NDc1Nzc4NjN8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Park G√ºell" loading="lazy" />
+    </div>
+  
+    <br>
+    <a href="http://localhost:5678/webhook-test/clicked-link">Approve</a> |
+    <a href="https://example.com/reject?location=spain">Reject</a>
+  </body>
+</html>
