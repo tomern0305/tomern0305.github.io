@@ -1,0 +1,74 @@
+
+<html>
+  <head>
+    <title>Top attractions in par</title>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <style>
+      body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; }
+      .attraction { margin-bottom: 40px; }
+      img {
+        max-width: 500px;
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        margin-top: 10px;
+      }
+      #map {
+        width: 100%;
+        max-width: 800px;
+        height: 400px;
+        margin-bottom: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Here are travel tips for par</h2>
+    <div id="map"></div>
+
+    <div class="attraction">
+      <h3>Eiffel Tower</h3>
+      <p><strong>Description:</strong> Iron lattice tower built for World Expo in 1889. Offers stunning city views</p>
+      <img src="https://images.unsplash.com/photo-1565881606991-789a8dff9dbb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NTA3Njl8MHwxfHNlYXJjaHwxfHxFaWZmZWwlMjBUb3dlcnxlbnwwfHx8fDE3NDc1ODU5NjV8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Eiffel Tower" loading="lazy" />
+    </div>
+  
+    <div class="attraction">
+      <h3>Louvre Museum</h3>
+      <p><strong>Description:</strong> One of the world's largest and most famous museums, housing Mona Lisa</p>
+      <img src="https://images.unsplash.com/photo-1560425946-7d5830202765?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NTA3Njl8MHwxfHNlYXJjaHwxfHxMb3V2cmUlMjBNdXNldW18ZW58MHx8fHwxNzQ3NTg1OTY1fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Louvre Museum" loading="lazy" />
+    </div>
+  
+    <div class="attraction">
+      <h3>Arc de Triomphe</h3>
+      <p><strong>Description:</strong> Triumphant arch honouring Napoleon's military victories, offers panoramic views</p>
+      <img src="https://images.unsplash.com/photo-1569949384963-296c0f251fbc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NTA3Njl8MHwxfHNlYXJjaHwxfHxBcmMlMjBkZSUyMFRyaW9tcGhlfGVufDB8fHx8MTc0NzU4NTk2NXww&ixlib=rb-4.1.0&q=80&w=1080" alt="Arc de Triomphe" loading="lazy" />
+    </div>
+  
+  <script>
+    var map = L.map('map');
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    var markers = [
+      L.marker([48.8588, 2.2943]),
+L.marker([48.8639, 2.2944]),
+L.marker([48.8737, 2.2921])
+    ];
+
+    var group = L.featureGroup(markers).addTo(map);
+    map.fitBounds(group.getBounds());
+  </script>
+
+    <br>
+    <a href="$execution.resumeUrl">Approve</a> |
+    <a href="https://example.com/reject?location=par">Reject</a>
+  </body>
+</html>
