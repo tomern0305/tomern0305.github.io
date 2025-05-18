@@ -1,0 +1,74 @@
+
+<html>
+  <head>
+    <title>Top attractions in spain</title>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <style>
+      body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; }
+      .attraction { margin-bottom: 40px; }
+      img {
+        max-width: 500px;
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        margin-top: 10px;
+      }
+      #map {
+        width: 100%;
+        max-width: 800px;
+        height: 400px;
+        margin-bottom: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Here are travel tips for spain</h2>
+    <div id="map"></div>
+
+    <div class="attraction">
+      <h3>Alhambra</h3>
+      <p><strong>Description:</strong> A breathtaking palace and fortress complex that showcases the grandeur of Islamic Spain. A must-visit attraction in Granada.</p>
+      <img src="https://images.unsplash.com/photo-1564740603199-5f56138c6679?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NTA3Njl8MHwxfHNlYXJjaHwxfHxBbGhhbWJyYXxlbnwwfHx8fDE3NDc0ODcwNDB8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Alhambra" loading="lazy" />
+    </div>
+  
+    <div class="attraction">
+      <h3>La Sagrada Familia</h3>
+      <p><strong>Description:</strong> The iconic and unfinished cathedral in Barcelona designed by Antoni Gaudí. A must-visit attraction in Spain.</p>
+      <img src="https://images.unsplash.com/photo-1581211085718-1405201b753a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NTA3Njl8MHwxfHNlYXJjaHwxfHxMYSUyMFNhZ3JhZGElMjBGYW1pbGlhfGVufDB8fHx8MTc0NzU3MDc4OXww&ixlib=rb-4.1.0&q=80&w=1080" alt="La Sagrada Familia" loading="lazy" />
+    </div>
+  
+    <div class="attraction">
+      <h3>Art Museo Reina Sofia</h3>
+      <p><strong>Description:</strong> One of the world's leading museums of modern and contemporary art. Houses Picasso's Guernica, Dalí, Miró, and more.</p>
+      <img src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NTA3Njl8MHwxfHNlYXJjaHwxfHxBcnQlMjBNdXNlbyUyMFJlaW5hJTIwU29maWF8ZW58MHx8fHwxNzQ3NTg1MDAxfDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Art Museo Reina Sofia" loading="lazy" />
+    </div>
+  
+  <script>
+    var map = L.map('map');
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    var markers = [
+      L.marker([37.17622, -3.85804]),
+L.marker([41.40362, 2.17425]),
+L.marker([40.40842, -3.69412])
+    ];
+
+    var group = L.featureGroup(markers).addTo(map);
+    map.fitBounds(group.getBounds());
+  </script>
+
+    <br>
+    <a href="$execution.resumeUrl">Approve</a> |
+    <a href="https://example.com/reject?location=spain">Reject</a>
+  </body>
+</html>
