@@ -1,0 +1,53 @@
+
+<html>
+  <head>
+    <title>Top attractions in spain</title>
+    <meta charset="UTF-8" />
+    <style>
+      body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; }
+      .attraction { margin-bottom: 40px; }
+      img {
+        max-width: 500px;
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        margin-top: 10px;
+      }
+      #map {
+        width: 100%;
+        max-width: 800px;
+        height: auto;
+        margin-bottom: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Here are travel tips for spain</h2>
+    <img src="https://staticmap.openstreetmap.de/staticmap.php?center=37.1762,-3.5904&zoom=10&size=800x400&markers=37.1762%2C-3.5904%2Clightblue1&markers=41.4036%2C2.1753%2Clightblue1&markers=40.4139%2C-3.6954%2Clightblue1" id="map" alt="Map of spain" />
+
+    <div class="attraction">
+      <h3>Alhambra</h3>
+      <p><strong>Description:</strong> A palace and fortress complex that showcases Islamic architecture. A must-visit in Granada, Spain.</p>
+      <img src="https://images.unsplash.com/photo-1564740603199-5f56138c6679?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NTA3Njl8MHwxfHNlYXJjaHwxfHxBbGhhbWJyYXxlbnwwfHx8fDE3NDc0ODcwNDB8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Alhambra" loading="lazy" />
+    </div>
+  
+    <div class="attraction">
+      <h3>La Sagrada Familia</h3>
+      <p><strong>Description:</strong> A famous cathedral in Barcelona, designed by Antoni Gaudí. A UNESCO World Heritage Site.</p>
+      <img src="https://images.unsplash.com/photo-1581211085718-1405201b753a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NTA3Njl8MHwxfHNlYXJjaHwxfHxMYSUyMFNhZ3JhZGElMjBGYW1pbGlhfGVufDB8fHx8MTc0NzU3MDc4OXww&ixlib=rb-4.1.0&q=80&w=1080" alt="La Sagrada Familia" loading="lazy" />
+    </div>
+  
+    <div class="attraction">
+      <h3>Prado Museum</h3>
+      <p><strong>Description:</strong> A world-renowned art museum in Madrid, featuring works by Goya, Velázquez, and El Greco.</p>
+      <img src="https://images.unsplash.com/photo-1624903182110-e66557457aef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NTA3Njl8MHwxfHNlYXJjaHwxfHxQcmFkbyUyME11c2V1bXxlbnwwfHx8fDE3NDc1NzU1ODJ8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Prado Museum" loading="lazy" />
+    </div>
+  
+    <br>
+    <a href="http://localhost:5678/webhook-test/clicked-link">Approve</a> |
+    <a href="https://example.com/reject?location=spain">Reject</a>
+  </body>
+</html>
