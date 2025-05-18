@@ -1,0 +1,35 @@
+
+<html>
+  <head>
+    <title>Top attractions in Unknown Location</title>
+    <meta charset="UTF-8" />
+    <style>
+      body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; }
+      .attraction { margin-bottom: 40px; }
+      img {
+        max-width: 500px;
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        margin-top: 10px;
+      }
+      #map {
+        width: 100%;
+        max-width: 800px;
+        height: auto;
+        margin-bottom: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Here are travel tips for Unknown Location</h2>
+    <img src="https://staticmap.openstreetmap.de/staticmap.php?center=null,null&zoom=10&size=800x400&" id="map" alt="Map of Unknown Location" />
+
+    <br>
+    <a href=<a href="http://localhost:5678/webhook-test/clicked-link">Approve</a> |
+    <a href="https://example.com/reject?location=Unknown%20Location">Reject</a>
+  </body>
+</html>
