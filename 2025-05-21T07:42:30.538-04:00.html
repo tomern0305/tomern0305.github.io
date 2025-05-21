@@ -1,0 +1,73 @@
+
+<html>
+  <head>
+    <title>Top attractions in israel</title>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <style>
+      body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; }
+      .attraction { margin-bottom: 40px; }
+      img {
+        max-width: 500px;
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        margin-top: 10px;
+      }
+      #map {
+        width: 100%;
+        max-width: 800px;
+        height: 400px;
+        margin-bottom: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Here are travel tips for israel</h2>
+    <div id="map"></div>
+
+    <div class="attraction">
+      <h3>White City</h3>
+      <p><strong>Description:</strong> A UNESCO World Heritage Site, known for its unique Bauhaus architecture. Explore the city's cultural and historical heritage.</p>
+      <img src="https://images.unsplash.com/photo-1481026469463-66327c86e544?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NTA3Njl8MHwxfHNlYXJjaHwxfHxXaGl0ZSUyMENpdHl8ZW58MHx8fHwxNzQ3ODI3NzE5fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="White City" loading="lazy" />
+    </div>
+  
+    <div class="attraction">
+      <h3>Carmel Market (Shuk HaCarmel)</h3>
+      <p><strong>Description:</strong> A bustling marketplace with a wide variety of vendors selling everything from fresh produce to souvenirs. Experience the sights and sounds of the local culture.</p>
+      <img src="https://images.unsplash.com/photo-1517137744310-173515c62d59?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NTA3Njl8MHwxfHNlYXJjaHwxfHxDYXJtZWwlMjBNYXJrZXQlMjAlMjhTaHVrJTIwSGFDYXJtZWwlMjl8ZW58MHx8fHwxNzQ3ODI3NzE4fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Carmel Market (Shuk HaCarmel)" loading="lazy" />
+    </div>
+  
+    <div class="attraction">
+      <h3>Rothschild Boulevard</h3>
+      <p><strong>Description:</strong> A vibrant street lined with cafes, restaurants, and shops. A popular spot for both locals and tourists alike.</p>
+      <img src="https://images.unsplash.com/photo-1604992661578-f7d4115c0619?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NTA3Njl8MHwxfHNlYXJjaHwxfHxSb3Roc2NoaWxkJTIwQm91bGV2YXJkfGVufDB8fHx8MTc0NzgyNzcxOHww&ixlib=rb-4.1.0&q=80&w=1080" alt="Rothschild Boulevard" loading="lazy" />
+    </div>
+  
+  <script>
+    var map = L.map('map');
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    var markers = [
+      L.marker([32.0793, 34.7692]),
+L.marker([32.0724, 34.7695]),
+L.marker([32.0725, 34.7778])
+    ];
+
+    var group = L.featureGroup(markers).addTo(map);
+    map.fitBounds(group.getBounds());
+  </script>
+
+    <br>
+    <a href="http://localhost:5678/form-waiting/392">Approve / Reject</a>
+  </body>
+</html>
