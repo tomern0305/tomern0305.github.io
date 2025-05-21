@@ -1,0 +1,73 @@
+
+<html>
+  <head>
+    <title>Top attractions in israel</title>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <style>
+      body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; }
+      .attraction { margin-bottom: 40px; }
+      img {
+        max-width: 500px;
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        margin-top: 10px;
+      }
+      #map {
+        width: 100%;
+        max-width: 800px;
+        height: 400px;
+        margin-bottom: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Here are travel tips for israel</h2>
+    <div id="map"></div>
+
+    <div class="attraction">
+      <h3>Western Wall</h3>
+      <p><strong>Description:</strong> A significant remnant of the Second Temple, this ancient wall is a sacred site for Jewish people. Visitors can write prayers on notes and place them between the stones.</p>
+      <img src="https://images.unsplash.com/photo-1549575483-14686a641c28?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NTA3Njl8MHwxfHNlYXJjaHwxfHxXZXN0ZXJuJTIwV2FsbHxlbnwwfHx8fDE3NDc4MDU4MTB8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Western Wall" loading="lazy" />
+    </div>
+  
+    <div class="attraction">
+      <h3>Church of the Holy Sepulchre</h3>
+      <p><strong>Description:</strong> This church is said to be the site of Jesus Christ's crucifixion, resurrection, and burial. It is considered one of the holiest sites.</p>
+      <img src="https://images.unsplash.com/photo-1596201373030-001a37ca8a05?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NTA3Njl8MHwxfHNlYXJjaHwxfHxDaHVyY2glMjBvZiUyMHRoZSUyMEhvbHklMjBTZXB1bGNocmV8ZW58MHx8fHwxNzQ3ODA1ODEwfDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Church of the Holy Sepulchre" loading="lazy" />
+    </div>
+  
+    <div class="attraction">
+      <h3>Masada National Park</h3>
+      <p><strong>Description:</strong> A UNESCO World Heritage Site, this ancient fortress sitting atop a rock plateau overlooks the Dead Sea. It is famous for its stunning views and historical significance.</p>
+      <img src="https://images.unsplash.com/photo-1586873523362-1de0ef1fba48?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NTA3Njl8MHwxfHNlYXJjaHwxfHxNYXNhZGElMjBOYXRpb25hbCUyMFBhcmt8ZW58MHx8fHwxNzQ3ODI2MTIyfDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Masada National Park" loading="lazy" />
+    </div>
+  
+  <script>
+    var map = L.map('map');
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    var markers = [
+      L.marker([31.776, 35.2333]),
+L.marker([31.7783, 35.8833]),
+L.marker([31.2927, 35.3629])
+    ];
+
+    var group = L.featureGroup(markers).addTo(map);
+    map.fitBounds(group.getBounds());
+  </script>
+
+    <br>
+    <a href="http://localhost:5678/form-waiting/374">Approve / Reject</a>
+  </body>
+</html>
