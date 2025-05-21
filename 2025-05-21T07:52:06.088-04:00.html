@@ -1,0 +1,105 @@
+
+<html>
+  <head>
+    <title>Top attractions in israel</title>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        padding: 20px;
+        background: #f9f9f9;
+        color: #333;
+      }
+      h2 {
+        text-align: center;
+        color: #2c3e50;
+      }
+      .attraction {
+        background: white;
+        padding: 20px;
+        border-radius: 12px;
+        margin-bottom: 40px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+      .attraction h3 {
+        margin-top: 0;
+        color: #1a73e8;
+      }
+      img {
+        max-width: 400px;
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        margin-top: 10px;
+        display: block;
+      }
+      #map {
+        width: 100%;
+        max-width: 800px;
+        height: 400px;
+        margin: 0 auto 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      }
+      a {
+        display: block;
+        text-align: center;
+        background: #1a73e8;
+        color: white;
+        padding: 12px 20px;
+        text-decoration: none;
+        border-radius: 8px;
+        width: fit-content;
+        margin: 20px auto;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Here are travel tips for israel</h2>
+    <div id="map"></div>
+
+    <div class="attraction">
+      <h3>Western Wall</h3>
+      <p><strong>Description:</strong> The Western Wall is a significant Jewish pilgrimage site and one of the most sacred places in the Jewish faith. It is a remnant of the ancient wall that surrounded the Temple Mount.</p>
+      <img src="https://images.unsplash.com/photo-1549575483-14686a641c28?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NTA3Njl8MHwxfHNlYXJjaHwxfHxXZXN0ZXJuJTIwV2FsbHxlbnwwfHx8fDE3NDc4MDU4MTB8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Western Wall" loading="lazy" />
+    </div>
+  
+    <div class="attraction">
+      <h3>Masada National Park</h3>
+      <p><strong>Description:</strong> Masada is an ancient fortress situated on top of a rock plateau overlooking the Dead Sea. Its dramatic architecture and scenic views create an unforgettable experience.</p>
+      <img src="https://images.unsplash.com/photo-1586873523362-1de0ef1fba48?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NTA3Njl8MHwxfHNlYXJjaHwxfHxNYXNhZGElMjBOYXRpb25hbCUyMFBhcmt8ZW58MHx8fHwxNzQ3ODI2MTIyfDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Masada National Park" loading="lazy" />
+    </div>
+  
+    <div class="attraction">
+      <h3>Church of the Holy Sepulchre</h3>
+      <p><strong>Description:</strong> The Church of the Holy Sepulchre is one of the most sacred sites in Christianity. It is believed to be the place of Jesus Christ's crucifixion, burial, and resurrection.</p>
+      <img src="https://images.unsplash.com/photo-1596201373030-001a37ca8a05?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NTA3Njl8MHwxfHNlYXJjaHwxfHxDaHVyY2glMjBvZiUyMHRoZSUyMEhvbHklMjBTZXB1bGNocmV8ZW58MHx8fHwxNzQ3ODA1ODEwfDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Church of the Holy Sepulchre" loading="lazy" />
+    </div>
+  
+  <script>
+    var map = L.map('map');
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    var markers = [
+      L.marker([31.7781, 35.2353]),
+L.marker([31.3123, 35.3864]),
+L.marker([31.7782, 35.2298])
+    ];
+
+    var group = L.featureGroup(markers).addTo(map);
+    map.fitBounds(group.getBounds());
+  </script>
+
+    <a href="http://localhost:5678/form-waiting/393">Approve / Reject</a>
+  </body>
+</html>
